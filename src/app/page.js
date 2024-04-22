@@ -152,7 +152,7 @@ export default function Index() {
       />
       <GetInTouch />
       <Footer />
-      <Switcher />
+      {/* <Switcher /> */}
     </>
   );
 }

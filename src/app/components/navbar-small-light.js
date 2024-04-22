@@ -93,65 +93,34 @@ export default function NavbarSmallLight() {
           >
             <ul className="navbar-nav nav-light" id="navbar-navlist">
               <li className={`nav-item`}>
-                <Link1
-                  to="home"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="nav-link"
-                >
+                <Link1 to="/home" activeClass="active" className="nav-link">
                   Home
                 </Link1>
               </li>
+
               <li className={`nav-item`}>
-                <Link1
-                  to="features"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="nav-link"
-                >
-                  Services
-                </Link1>
+                <Link href="/about" activeClass="active" className="nav-link">
+                  About Us
+                </Link>
+              </li>
+
+              <li className={`nav-item`}>
+                <Link href="/service" activeClass="active" className="nav-link">
+                  Service
+                </Link>
               </li>
               <li className={`nav-item`}>
-                <Link1
-                  to="pricing"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="nav-link"
-                >
+                <Link href="/pricing" activeClass="active" className="nav-link">
                   Pricing
-                </Link1>
+                </Link>
               </li>
               <li className={`nav-item`}>
-                <Link1
-                  to="testi"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="nav-link"
-                >
-                  Review
-                </Link1>
+                <Link href="/shop" activeClass="active" className="nav-link">
+                  Shop
+                </Link>
               </li>
-              <li className={`nav-item`}>
-                <Link1
-                  to="blog"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="nav-link"
-                >
-                  Blog
-                </Link1>
-              </li>
-              <li className={`nav-item`}>
+
+              {/* <li className={`nav-item`}>
                 <Link1
                   to="contact"
                   activeClass="active"
@@ -162,7 +131,7 @@ export default function NavbarSmallLight() {
                 >
                   Contact us
                 </Link1>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
