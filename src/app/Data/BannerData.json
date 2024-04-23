@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "ON ASAL TV",
+    "tagline": "WATCH EXCLUSIVELY",
+    "image": "https://images5.alphacoders.com/103/1037819.jpg",
+    "buttons": [
+      {
+        "id": 1,
+        "text": "Contact Us",
+        "link": "https://www.pexels.com/@rpnickson/",
+        "type": "btn-dark btn-circle"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "GIVE IT A SHOOT",
+    "tagline": "IF YOU LIKE IT",
+    "image": "https://images5.alphacoders.com/103/1037819.jpg",
+    "buttons": [
+      {
+        "id": 1,
+        "text": "Join Us",
+        "link": "https://www.pexels.com/@julia-m-cameron/",
+        "type": "btn-dark btn-circle"
+      }
+    ]
+  }
+]

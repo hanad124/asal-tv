@@ -20,8 +20,8 @@ const GetInTouch = dynamic(() => import("./components/get-in-touch"));
 
 import * as Unicons from "@iconscout/react-unicons";
 
-import ModalVideo from "react-modal-video";
 import "../../node_modules/react-modal-video/css/modal-video.css";
+import Banner from "./components/banner/banner";
 
 export default function Index() {
   const [isOpen, setOpen] = useState(false);
@@ -29,47 +29,7 @@ export default function Index() {
   return (
     <>
       <NavbarSmallLight />
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={isOpen}
-        videoId="yba7hPeTSjk"
-        onClose={() => setOpen(false)}
-      />
-      <section
-        className="py-36 lg:py-56 w-full table relative bg-[url('/images/bg/bg.jpg')] bg-top bg-no-repeat"
-        id="home"
-      >
-        <div className="absolute inset-0 bg-gradient-to-t to-slate-950/50 via-slate-950/75 from-slate-950"></div>
-        <div className="container">
-          <div className="grid grid-cols-1 pb-8 text-center mt-10">
-            <Link
-              href="#"
-              onClick={() => setOpen(true)}
-              data-type="youtube"
-              data-id="yba7hPeTSjk"
-              className="lightbox lg:h-20 h-16 lg:w-20 w-16 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white hover:bg-[#cc3333] text-[#cc3333] hover:text-white duration-500 ease-in-out mx-auto"
-            >
-              <i className="mdi mdi-play inline-flex items-center justify-center text-3xl"></i>
-            </Link>
-            <h3 className="font-medium leading-normal text-4xl mb-5 mt-10 text-white font-lexend">
-              We&apos;re Helping to Achieve your Success.
-            </h3>
-            <p className="text-slate-400 text-lg max-w-xl mx-auto font-inter">
-              This is just a simple text made for this unique and awesome
-              template, you can replace it with any text.
-            </p>
-            <div className="mt-8">
-              <Link
-                href="#"
-                className="py-2 px-5  font-normal tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[#cc3333] hover:bg-[#cc3333] border-[#cc3333] hover:border-[#cc3333] text-white rounded-md font-inter inline-flex items-center gap-1"
-              >
-                <Unicons.UilEnvelope width={16} /> Contact Now
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Banner />
       <About />
       <OurServices
         title="Our Services"
@@ -152,7 +112,7 @@ export default function Index() {
       />
       <GetInTouch />
       <Footer />
-      {/* <Switcher /> */}
+      <Switcher />
     </>
   );
 }

@@ -68,7 +68,7 @@ export default function Switcher() {
         </span>
       </div>
 
-      <div className="fixed top-[40%] -right-3 z-50">
+      {/* <div className="fixed top-[40%] -right-3 z-50">
         <Link to="#" id="switchRtl" className="cursor-pointer">
           <span
             className="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold rtl:block ltr:hidden"
@@ -83,7 +83,7 @@ export default function Switcher() {
             RTL
           </span>
         </Link>
-      </div>
+      </div> */}
 
       <Link
         href="#"
