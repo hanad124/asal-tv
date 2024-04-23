@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { BiArrowBack } from "react-icons/bi";
 
-import SliderButtons from "../sliderButtons";
+import SliderButtons from "../SliderButtons";
 
 const Banner = () => {
   const data = BannerData;
