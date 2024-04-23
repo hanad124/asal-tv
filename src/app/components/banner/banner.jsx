@@ -32,7 +32,7 @@ const Banner = () => {
                       background: `url(${image}) center center / cover scroll no-repeat`,
                     }}
                   ></div>
-                  <div className="h-full w-full absolute left-0 top-0 bg-black opacity-20"></div>
+                  <div className="h-full w-full absolute left-0 top-0 bg-black opacity-50"></div>
                   <div className="relative z-10 h-full flex items-center justify-start pl-[6rem]">
                     <div className="text-start">
                       {tagline && (
