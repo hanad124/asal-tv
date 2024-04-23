@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import * as Unicons from "@iconscout/react-unicons";
-import SingleBanner from "./SingleBanner";
 import BannerData from "../../Data/BannerData.json";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +12,6 @@ import SliderButtons from "../sliderButtons";
 
 const Banner = () => {
   const data = BannerData;
-  console.log(data);
   return (
     <section className="w-full relative">
       <div className=" h-screen relative">
