@@ -13,9 +13,9 @@ import SliderButtons from "../SliderButtons";
 const Banner = () => {
   const data = BannerData;
   return (
-    <section className="w-full relative">
+    <section className="w-full relative bg-rde-500">
       <div className=" h-screen relative">
-        <ul className="h-full bg-red-500 w-full relative">
+        <ul className="h-full w-full relative">
           <Swiper
             // navigation
             // pagination={{ type: "bullets", clickable: true }}
@@ -25,22 +25,22 @@ const Banner = () => {
           >
             {data.map(({ id, image, tagline, title, buttons }) => (
               <SwiperSlide key={id}>
-                <div className="relative h-screen bg-blue-600">
+                <div className="relative h-screen">
                   <div
                     className="h-full w-full absolute left-0 top-0"
-                    style={{
-                      background: `url(${image}) center center / cover scroll no-repeat`,
-                    }}
+                    // style={{
+                    //   background: `url(${image}) center center / cover scroll no-repeat`,
+                    // }}
                   ></div>
                   <div className="h-full w-full absolute left-0 top-0 bg-black opacity-50"></div>
-                  <div className="relative z-10 h-full flex items-center justify-start pl-[6rem]">
+                  <div className="relative z-10 h-full flex items-center justify-start p-[2rem] md:pl-[6rem]">
                     <div className="text-start">
                       {tagline && (
-                        <p className="text-md sm:text-xl md:text-6xl font-bold text-white mt-16">
+                        <p className="sm:text-4xl md:text-6xl font-bold text-white mt-16 lowercase">
                           {tagline}
                         </p>
                       )}
-                      <p className=" md:text-6xl font-bold text-white  mt-3">
+                      <p className=" text-4xl md:text-6xl font-bold text-white lowercase mt-3">
                         {title}
                       </p>
                       {buttons.length > 0 ? (
